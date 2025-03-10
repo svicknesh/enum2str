@@ -1,7 +1,8 @@
 package enum2str
 
+// supported numeric types, the tilde(~) means set of all types whose underlying type is `Numeric`
 type Numeric interface {
-	~uint8 | int8 | int
+	~uint8 | ~int8 | ~int
 }
 
 // String - returns string value of an input from a map of string list
